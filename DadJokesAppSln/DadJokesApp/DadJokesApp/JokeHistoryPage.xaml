@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DadJokesApp.JokeHistoryPage" Title="Dad Joke History" IconImageSource="history.png">
+    <ListView ItemsSource="{Binding Jokes}" HasUnevenRows="True" SelectionMode="None">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Label Padding="5" Text="{Binding Joke}" MaxLines="4" Margin="5" FontFamily="OpenSans"/>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>
